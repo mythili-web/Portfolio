@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>P.V Mythili | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <img src="image.jpg" alt="Avatar" class="avatar" />
+      <h2>P.V Mythili</h2>
+      <p class="role">Web Developer</p>
+      <div class="contact-info">
+        <p class="role">Email</p>
+        <p><i class="fas fa-envelope"></i> pallamythili33@gmail.com</p>
+        <p class="role">Phone</p>
+        <p><i class="fas fa-phone"></i> 6301402021</p>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <nav class="nav-tabs">
+        <a href="#" class="tab-link active" data-tab="about">About</a>
+        <a href="#" class="tab-link" data-tab="experience">Experience</a>
+        <a href="#" class="tab-link" data-tab="projects">Projects</a>
+        <a href="#" class="tab-link" data-tab="certificate">Certificate</a>
+        <a href="#" class="tab-link" data-tab="contact">Contact</a>
+      </nav>
+
+      <!-- About Section -->
+      <section id="about" class="tab-section active">
+        <h1>About Me</h1>
+        <p class="intro">
+          Full Stack Developer Intern with 1 year of experience building high-performance web apps using React and Node.js. Passionate about enhancing digital experiences and driving business growth through innovation.
+        </p>
+
+        <section class="doing-section">
+          <h2>What I'm Doing</h2>
+          <div class="cards">
+            <div class="card">
+              <i class="fas fa-code"></i>
+              <h3>Web Development [MERN]</h3>
+              <p>High-quality development of sites at the professional level.</p>
+            </div>
+            <div class="card">
+              <i class="fas fa-pencil-ruler"></i>
+              <h3>Web Design</h3>
+              <p>The most modern and high-quality design made at a professional level.</p>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="tab-section">
+        <h2>Experience</h2>
+        <div class="experience-item">
+          <h3>Full Stack Developer Intern</h3>
+          <p>Worked on React, Next.js, and Node.js applications, improving performance and scalability.</p>
+          <small>March 2025 – Present</small>
+        </div>
+        <div class="experience-item">
+          <h3>Cloud Computing (Azure)</h3>
+          <p>Developed interactive user interfaces with React and Redux.</p>
+          <small>May 2025 – Present</small>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="tab-section">
+        <h2>Projects</h2>
+        <div class="project-item">
+          <h3>Blog</h3>
+          <p>Created a Blog website using HTML, CSS, and JavaScript.</p>
+          <a href="https://verdant-valkyrie-2e21bc.netlify.app/" class="project-link" target="_blank">Visit project</a>
+        </div>
+        <div class="project-item">
+          <h3>Virtual Mouse using Hand Gestures</h3>
+          <p>Designed a project Virtual Mouse using OpenCV and Hand Gestures.</p>
+          <a href="#" class="project-link" target="_blank">Visit project</a>
+        </div>
+        <div class="project-item">
+          <h3>Portfolio</h3>
+          <p>Created a Portfolio website using frontend technology.</p>
+          <a href="#" class="project-link" target="_blank">Visit project</a>
+        </div>
+      </section>
+
+      <!-- Certificate Section -->
+      <section id="certificate" class="tab-section">
+        <h2>Certificates</h2>
+
+        <div class="certificate-item">
+          <img src="dsa.jpg" alt="DSA Certificate" />
+          <div>
+            <h3>DSA for Service Based Companies</h3>
+            <p>Issued by <strong>Prepinsta</strong>, 2025.</p>
+          </div>
+        </div>
+
+        <div class="certificate-item">
+          <img src="cis.jpg" alt="Cybersecurity Certificate" />
+          <div>
+            <h3>Introduction to Cybersecurity</h3>
+            <p>Issued by <strong>Cisco Networking Academy</strong>, 2025.</p>
+          </div>
+        </div>
+
+        <div class="certificate-item">
+          <img src="un.jpg" alt="Coding Challenge Certificate" />
+          <div>
+            <h3>Weekly Coding Challenge</h3>
+            <p>Issued by <strong>Unstop</strong>, 2024.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="tab-section">
+        <h2>Contact Me</h2>
+        <p>You can reach me at:</p>
+        <p><i class="fas fa-envelope"></i>pallamythili33@gmail.com</p>
+        <p><i class="fas fa-phone"></i>6301402021</p>
+
+        <form id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+          <p id="form-message" class="form-message"></p>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
